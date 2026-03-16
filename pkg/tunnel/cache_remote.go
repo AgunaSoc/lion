@@ -18,7 +18,7 @@ import (
 	"lion/pkg/guacd"
 	"lion/pkg/logger"
 
-	"github.com/atherlock-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/common"
 )
 
 const (

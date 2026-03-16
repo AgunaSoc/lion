@@ -3,7 +3,7 @@ package tunnel
 import (
 	"sync"
 
-	"github.com/atherlock-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/common"
 
 	"lion/pkg/guacd"
 	"lion/pkg/logger"

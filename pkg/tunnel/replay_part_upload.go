@@ -13,11 +13,11 @@ import (
 	"lion/pkg/guacd"
 	"lion/pkg/logger"
 
-	"github.com/atherlock-dev/sdk-go/common"
-	"github.com/atherlock-dev/sdk-go/model"
-	"github.com/atherlock-dev/sdk-go/service"
-	"github.com/atherlock-dev/sdk-go/service/videoworker"
-	"github.com/atherlock-dev/sdk-go/storage"
+	"github.com/jumpserver-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/model"
+	"github.com/jumpserver-dev/sdk-go/service"
+	"github.com/jumpserver-dev/sdk-go/service/videoworker"
+	"github.com/jumpserver-dev/sdk-go/storage"
 )
 
 /*

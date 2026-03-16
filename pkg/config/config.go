@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/atherlock-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/common"
 
 	"github.com/spf13/viper"
 )

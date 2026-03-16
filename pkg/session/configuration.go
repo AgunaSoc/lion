@@ -11,8 +11,8 @@ import (
 	"lion/pkg/config"
 	"lion/pkg/guacd"
 
-	"github.com/atherlock-dev/sdk-go/common"
-	"github.com/atherlock-dev/sdk-go/model"
+	"github.com/jumpserver-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/model"
 )
 
 type ConnectionConfiguration interface {

@@ -9,7 +9,7 @@ import (
 	"lion/pkg/config"
 	"lion/pkg/logger"
 
-	"github.com/atherlock-dev/sdk-go/service"
+	"github.com/jumpserver-dev/sdk-go/service"
 )
 
 func GinSessionAuth(store ginSessions.Store) gin.HandlerFunc {

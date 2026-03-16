@@ -12,8 +12,8 @@ import (
 
 	"lion/pkg/logger"
 
-	"github.com/atherlock-dev/sdk-go/common"
-	"github.com/atherlock-dev/sdk-go/model"
+	"github.com/jumpserver-dev/sdk-go/common"
+	"github.com/jumpserver-dev/sdk-go/model"
 )
 
 var ErrNoAvailable = errors.New("no available domain")
