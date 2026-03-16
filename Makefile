@@ -81,7 +81,7 @@ linux-riscv64: lion-ui
 
 .PHONY: docker
 docker:
-	docker buildx build --build-arg VERSION=$(VERSION) -t jumpserver/lion:$(VERSION) .
+	docker buildx build --build-arg VERSION=$(VERSION) -t atherlock/lion:$(VERSION) .
 
 lion-ui:
 	@echo "build ui"

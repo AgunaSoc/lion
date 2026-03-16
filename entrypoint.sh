@@ -35,7 +35,7 @@ export GUACD_LOG_LEVEL=$level
 
 echo
 date
-echo "LION Version $VERSION, more see https://www.jumpserver.org"
+echo "LION Version $VERSION, more see https://www.atherlock.org"
 echo "Quit the server with CONTROL-C."
 echo
 

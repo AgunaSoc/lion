@@ -12,7 +12,7 @@ import (
 	"lion/pkg/guacd"
 	"lion/pkg/logger"
 
-	"github.com/jumpserver-dev/sdk-go/model"
+	"github.com/atherlock-dev/sdk-go/model"
 )
 
 type MonitorCon struct {

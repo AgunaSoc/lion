@@ -25,11 +25,11 @@ import (
 	"lion/pkg/session"
 	"lion/pkg/tunnel"
 
-	"github.com/jumpserver-dev/sdk-go/common"
-	"github.com/jumpserver-dev/sdk-go/model"
-	"github.com/jumpserver-dev/sdk-go/service"
-	"github.com/jumpserver-dev/sdk-go/service/panda"
-	"github.com/jumpserver-dev/sdk-go/storage"
+	"github.com/atherlock-dev/sdk-go/common"
+	"github.com/atherlock-dev/sdk-go/model"
+	"github.com/atherlock-dev/sdk-go/service"
+	"github.com/atherlock-dev/sdk-go/service/panda"
+	"github.com/atherlock-dev/sdk-go/storage"
 )
 
 var (
@@ -76,7 +76,7 @@ func main() {
 	go runCleanDriverDisk(tunnelService.Cache)
 	go runTokenCheck(jmsService, tunnelService.Cache)
 	addr := net.JoinHostPort(config.GlobalConfig.BindHost, config.GlobalConfig.HTTPPort)
-	fmt.Printf("Lion Version %s, more see https://www.jumpserver.org\n", Version)
+	fmt.Printf("Lion Version %s, more see https://www.atherlock.org\n", Version)
 	logger.Infof("listen on: %s", addr)
 	logger.Fatal(http.ListenAndServe(addr, eng))
 }

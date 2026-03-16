@@ -6,7 +6,7 @@ networks:
 
 services:
   guacd:
-    image: jumpserver/guacd:1.4.0
+    image: atherlock/guacd:1.4.0
     container_name: guacd
     ports:
       - "4822:4822"

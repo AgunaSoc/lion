@@ -13,7 +13,7 @@ Refer to the configuration file [config_example](config_example.yml)
 ## Build the image
 
 ```shell
-docker build -t jumpserver/lion .
+docker build -t atherlock/lion .
 ```
 
 ## Docker start
@@ -22,5 +22,5 @@ docker build -t jumpserver/lion .
 docker run -d --name jms_lion -p 8081:8081 \
 -v $(pwd)/data:/opt/lion/data \
 -v $(pwd)/config.yml:/opt/lion/config.yml \
-jumpserver/lion
+atherlock/lion
 ```

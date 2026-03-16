@@ -1,4 +1,4 @@
-FROM jumpserver/lion-base:20260303_032936 AS stage-build
+FROM atherlock/lion-base:20260303_032936 AS stage-build
 ARG TARGETARCH
 
 ARG GOPROXY=https://goproxy.io
@@ -24,7 +24,7 @@ RUN export GOFlAGS="-X 'main.Buildstamp=`date -u '+%Y-%m-%d %I:%M:%S%p'`'" \
 
 RUN chmod +x entrypoint.sh
 
-FROM jumpserver/guacd:1.5.5-trixie
+FROM atherlock/guacd:1.5.5-trixie
 ARG TARGETARCH
 ENV LANG=en_US.UTF-8
 USER root

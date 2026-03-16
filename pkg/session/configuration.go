@@ -11,8 +11,8 @@ import (
 	"lion/pkg/config"
 	"lion/pkg/guacd"
 
-	"github.com/jumpserver-dev/sdk-go/common"
-	"github.com/jumpserver-dev/sdk-go/model"
+	"github.com/atherlock-dev/sdk-go/common"
+	"github.com/atherlock-dev/sdk-go/model"
 )
 
 type ConnectionConfiguration interface {
@@ -124,7 +124,7 @@ func (r RDPConfiguration) GetGuacdConfiguration() guacd.Configuration {
 		conf.SetParameter(guacd.RDPDrivePath, drivePath)
 		conf.SetParameter(guacd.RDPCreateDrivePath, BoolTrue)
 		conf.SetParameter(guacd.RDPEnableDrive, enableDrive)
-		conf.SetParameter(guacd.RDPDriveName, "JumpServer")
+		conf.SetParameter(guacd.RDPDriveName, "Atherlock")
 		conf.SetParameter(guacd.RDPDisableDownload, disableDownload)
 		conf.SetParameter(guacd.RDPDisableUpload, disableUpload)
 	}
@@ -154,7 +154,7 @@ func (r RDPConfiguration) GetGuacdConfiguration() guacd.Configuration {
 	conf.SetParameter(guacd.RDPIgnoreCert, BoolTrue)
 
 	// 设置客户端名称，任务管理器--用户---客户端名称显示
-	conf.SetParameter(guacd.RDPClientName, "JumpServer-Lion")
+	conf.SetParameter(guacd.RDPClientName, "Atherlock-Lion")
 
 	return conf
 }
@@ -313,6 +313,6 @@ func (r VirtualAppConfiguration) GetGuacdConfiguration() guacd.Configuration {
 }
 
 const (
-	vAPPSFTPUsername = "jumpserver"
-	sftpRootDir      = "/tmp/jumpserver/download"
+	vAPPSFTPUsername = "atherlock"
+	sftpRootDir      = "/tmp/atherlock/download"
 )

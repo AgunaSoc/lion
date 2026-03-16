@@ -12,7 +12,7 @@ import (
 	"lion/pkg/logger"
 	"lion/pkg/proxy"
 
-	"github.com/jumpserver-dev/sdk-go/model"
+	"github.com/atherlock-dev/sdk-go/model"
 )
 
 type OutputStreamInterceptingFilter struct {

@@ -22,8 +22,8 @@ jobs:
     - name: Prepare Build
       run: |
         sed -i 's@registry.npmmirror.com@registry.yarnpkg.com@g' ui/yarn.lock
-        sed -i 's@^FROM registry.fit2cloud.com/jumpserver@FROM ghcr.io/jumpserver@g' Dockerfile
-        sed -i 's@^FROM registry.fit2cloud.com/jumpserver@FROM ghcr.io/jumpserver@g' Dockerfile-ee
+        sed -i 's@^FROM registry.fit2cloud.com/atherlock@FROM ghcr.io/atherlock@g' Dockerfile
+        sed -i 's@^FROM registry.fit2cloud.com/atherlock@FROM ghcr.io/atherlock@g' Dockerfile-ee
 
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v3
@@ -38,7 +38,7 @@ jobs:
         context: .
         push: true
         file: Dockerfile
-        tags: ghcr.io/jumpserver/${{ matrix.component }}:${{ matrix.version }}-ce
+        tags: ghcr.io/atherlock/${{ matrix.component }}:${{ matrix.version }}-ce
         platforms: linux/amd64
         build-args: |
           VERSION=${{ matrix.version }}
@@ -55,7 +55,7 @@ jobs:
         context: .
         push: false
         file: Dockerfile-ee
-        tags: ghcr.io/jumpserver/${{ matrix.component }}:${{ matrix.version }}
+        tags: ghcr.io/atherlock/${{ matrix.component }}:${{ matrix.version }}
         platforms: linux/amd64
         build-args: |
           VERSION=${{ matrix.version }}

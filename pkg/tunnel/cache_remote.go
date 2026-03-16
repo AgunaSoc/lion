@@ -18,17 +18,17 @@ import (
 	"lion/pkg/guacd"
 	"lion/pkg/logger"
 
-	"github.com/jumpserver-dev/sdk-go/common"
+	"github.com/atherlock-dev/sdk-go/common"
 )
 
 const (
-	eventsChannel = "JUMPSERVER:LION:EVENTS:CHANNEL"
+	eventsChannel = "ATHERLOCK:LION:EVENTS:CHANNEL"
 
-	resultsChannel = "JUMPSERVER:LION:EVENTS:RESULT"
+	resultsChannel = "ATHERLOCK:LION:EVENTS:RESULT"
 
-	sessionEventsChannel = "JUMPSERVER:LION:EVENTS:SESSIONS"
+	sessionEventsChannel = "ATHERLOCK:LION:EVENTS:SESSIONS"
 
-	sessionsChannelPrefix = "JUMPSERVER:LION:SESSIONS"
+	sessionsChannelPrefix = "ATHERLOCK:LION:SESSIONS"
 )
 
 type Config struct {

@@ -59,24 +59,24 @@ func (d Display) GetDisplayParams() map[string]string {
 }
 
 var RDPDisplay = Display{data: map[string]DisplayParameter{
-	"JUMPSERVER_COLOR_DEPTH":                colorDepth,
-	"JUMPSERVER_DPI":                        dpi,
-	"JUMPSERVER_DISABLE_AUDIO":              disableAudio,
-	"JUMPSERVER_ENABLE_WALLPAPER":           enableWallpaper,
-	"JUMPSERVER_ENABLE_THEMING":             enableTheming,
-	"JUMPSERVER_ENABLE_FONT_SMOOTHING":      enableFontSmoothing,
-	"JUMPSERVER_ENABLE_FULL_WINDOW_DRAG":    enableFullWindowDrag,
-	"JUMPSERVER_ENABLE_DESKTOP_COMPOSITION": enableDesktopComposition,
-	"JUMPSERVER_ENABLE_MENU_ANIMATIONS":     enableMenuAnimations,
-	"JUMPSERVER_DISABLE_BITMAP_CACHING":     disableBitmapCaching,
-	"JUMPSERVER_DISABLE_OFFSCREEN_CACHING":  disableOffscreenCaching,
-	"JUMPSERVER_ENABLE_CONSOLE_AUDIO":       enableConsoleAudio,
-	"JUMPSERVER_ENABLE_AUDIO_INPUT":         enableAudioInput,
+	"ATHERLOCK_COLOR_DEPTH":                colorDepth,
+	"ATHERLOCK_DPI":                        dpi,
+	"ATHERLOCK_DISABLE_AUDIO":              disableAudio,
+	"ATHERLOCK_ENABLE_WALLPAPER":           enableWallpaper,
+	"ATHERLOCK_ENABLE_THEMING":             enableTheming,
+	"ATHERLOCK_ENABLE_FONT_SMOOTHING":      enableFontSmoothing,
+	"ATHERLOCK_ENABLE_FULL_WINDOW_DRAG":    enableFullWindowDrag,
+	"ATHERLOCK_ENABLE_DESKTOP_COMPOSITION": enableDesktopComposition,
+	"ATHERLOCK_ENABLE_MENU_ANIMATIONS":     enableMenuAnimations,
+	"ATHERLOCK_DISABLE_BITMAP_CACHING":     disableBitmapCaching,
+	"ATHERLOCK_DISABLE_OFFSCREEN_CACHING":  disableOffscreenCaching,
+	"ATHERLOCK_ENABLE_CONSOLE_AUDIO":       enableConsoleAudio,
+	"ATHERLOCK_ENABLE_AUDIO_INPUT":         enableAudioInput,
 }}
 
 var VNCDisplay = Display{data: map[string]DisplayParameter{
-	"JUMPSERVER_COLOR_DEPTH":       colorDepth,
-	"JUMPSERVER_VNC_CURSOR_RENDER": vncCursorRender,
+	"ATHERLOCK_COLOR_DEPTH":       colorDepth,
+	"ATHERLOCK_VNC_CURSOR_RENDER": vncCursorRender,
 }}
 
 var RDPBuiltIn = map[string]string{
